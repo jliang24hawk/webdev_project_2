@@ -54,6 +54,7 @@ a:hover {
 
 .navigation_bar nav ul li a:hover {
     color: #007BFF;
+		transform: scale(1.1);
 }
 
 .navigation_bar nav ul li.active a {
@@ -83,8 +84,10 @@ img {
 
 /* Responsive Design */
 @media (max-width: 600px) {
+    .navigation_bar nav ul {
+        flex-direction: column;
+    }
     .navigation_bar nav ul li {
-        display: block;
         margin: 10px 0;
     }
 }
