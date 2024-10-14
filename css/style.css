@@ -103,13 +103,25 @@ h1 {
 }
 
 /* Image Styles */
+
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
+  width: 200px;
+  height: 150px;
 }
 
+@media only screen and (max-width: 768px) {
+  img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100px;
+    height: 75px;
+  }
+}
 /* Responsive Design */
 @media (max-width: 600px) {
     .navigation_bar nav ul {
