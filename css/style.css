@@ -9,8 +9,22 @@ body {
     background-color: #f4f4f4;
 }
 
-h1, h2, h3, h4 {
-    color: #333;
+h1 {
+  color: #333;
+  font-size: 36px;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  color: #666;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+span {
+  color: #999;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
 }
 
 a {
@@ -51,44 +65,37 @@ a:hover {
 }
 
 /* Navigation Bar Styles */
-.navigation_bar {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 .navigation_bar nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation_bar nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
-.navigation_bar nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.2s ease;
+.navigation_bar nav a {
+  color: #333;
+  text-decoration: none;
 }
 
-.navigation_bar nav ul li a:hover {
-    color: #007BFF;
-		transform: scale(1.1);
+.navigation_bar nav a:hover {
+  color: #666;
 }
 
-.navigation_bar nav ul li.active a {
-    color: #007BFF;
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .navigation_bar nav ul {
+    flex-direction: column;
+  }
+  .navigation_bar nav ul li {
+    margin: 10px 0;
+  }
 }
-
 /* Section Styles */
 section {
     margin: 20px;
@@ -122,12 +129,22 @@ img {
     height: 75px;
   }
 }
-/* Responsive Design */
-@media (max-width: 600px) {
-    .navigation_bar nav ul {
-        flex-direction: column;
-    }
-    .navigation_bar nav ul li {
-        margin: 10px 0;
-    }
+/* Responsive design for medium screens */
+@media (max-width: 900px) {
+  .navigation_bar nav ul {
+    flex-direction: column;
+  }
+  .navigation_bar nav ul li {
+    margin: 15px 0;
+  }
+}
+
+/* Responsive design for extra small screens */
+@media (max-width: 300px) {
+  .navigation_bar nav ul {
+    flex-direction: column;
+  }
+  .navigation_bar nav ul li {
+    margin: 5px 0;
+  }
 }
