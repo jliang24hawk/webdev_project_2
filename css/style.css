@@ -1,2 +1,72 @@
-body{
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar Styles */
+.navigation_bar {
+    background-color: #333;
+    color: white;
+}
+
+.navigation_bar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation_bar nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigation_bar nav ul li a {
+    color: white;
+}
+
+/* Section Styles */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navigation_bar nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
