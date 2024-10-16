@@ -1,28 +1,39 @@
+/* Navigation Bar Styles */
 
-
-/* The navigation bar */
-.navbar {
-  overflow: hidden;
+#navbar {
   background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  color: #fff;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+#navbar a {
+  color: #fff;
   text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+}
+#navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #ddd;
-  color: black;
+#navbar ul li {
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  #navbar ul {
+    flex-direction: column;
+  }
+  #navbar ul li {
+    margin: 10px 0;
+  }
 }
 
 /* Main content */
@@ -73,23 +84,3 @@ img {
     height: 75px;
   }
 }
-/* Responsive design for medium screens */
-@media (max-width: 900px) {
-  .navigation_bar nav ul {
-    flex-direction: column;
-  }
-  .navigation_bar nav ul li {
-    margin: 15px 0;
-  }
-}
-
-/* Responsive design for extra small screens */
-@media (max-width: 300px) {
-  .navigation_bar nav ul {
-    flex-direction: column;
-  }
-  .navigation_bar nav ul li {
-    margin: 5px 0;
-  }
-}
-

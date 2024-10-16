@@ -1,0 +1,32 @@
+/* Navigation Bar Styles */
+
+.navigation_bar nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation_bar nav ul li {
+  margin-right: 20px;
+}
+
+.navigation_bar nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.navigation_bar nav a:hover {
+  color: #666;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .navigation_bar nav ul {
+    flex-direction: column;
+  }
+  .navigation_bar nav ul li {
+    margin: 10px 0;
+  }
+}

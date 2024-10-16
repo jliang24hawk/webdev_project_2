@@ -1,12 +1,12 @@
-/* styles.css */
+
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  background-image: url(https://cdn.glitch.global/a5d4c914-cb94-4cd1-bf26-a1933bd1dbcf/2-sides-of-brain-2-e1648661027959.jpeg?v=1654037260230);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 10em;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -98,11 +98,11 @@ a:hover {
 }
 /* Section Styles */
 section {
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7); /* Set background color to semi-transparent white */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
