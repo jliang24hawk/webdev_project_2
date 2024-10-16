@@ -30,6 +30,95 @@
     margin: 10px 0;
   }
 }
+/* Responsive design for medium screens */
+@media (max-width: 900px) {
+  .navigation_bar nav ul {
+    flex-direction: column;
+  }
+  .navigation_bar nav ul li {
+    margin: 15px 0;
+  }
+}
+
+/* Responsive design for extra small screens */
+@media (max-width: 300px) {
+  .navigation_bar nav ul {
+    flex-direction: column;
+  }
+  .navigation_bar nav ul li {
+    margin: 5px 0;
+  }
+}
 
 /* styling */
+.marquee {
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent text wrapping */
+  box-sizing: border-box; /* Include padding in width */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional background for contrast */
+  padding: 10px 0; /* Padding for aesthetics */
+}
 
+.marquee h1 {
+  display: inline-block; /* Make the paragraph inline */
+  animation: marquee 10s linear infinite; /* Animation settings */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start off-screen right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to off-screen left */
+  }
+}
+
+body {
+	background-image: url('media/airport.jpg'); 
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover; /* Cover the entire body */
+	background-position: 0 10em;
+  background-color: #d2fafd;
+}
+
+/* Image Styles */
+
+img {
+  width: 200px;
+  height: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100px;
+    height: 75px;
+  }
+}
+/* Responsive design for medium screens */
+@media (max-width: 900px) {
+  .navigation_bar nav ul {
+    flex-direction: column;
+  }
+  .navigation_bar nav ul li {
+    margin: 15px 0;
+  }
+}
+
+/* Responsive design for extra small screens */
+@media (max-width: 300px) {
+  .navigation_bar nav ul {
+    flex-direction: column;
+  }
+  .navigation_bar nav ul li {
+    margin: 5px 0;
+  }
+}

@@ -1,44 +1,61 @@
-
+/* General Styles */
 body {
+  background-image: url(https://cdn.glitch.global/a5d4c914-cb94-4cd1-bf26-a1933bd1dbcf/2-sides-of-brain-2-e1648661027959.jpeg?v=1654037260230);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 10em;
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #333;
+  font-size: 36px;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-	background-image: url("gradient_bg.png");
-	background-repeat: repeat-x;
 }
+
+p {
+  color: #666;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+span {
+  color: #999;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Info Section Styles */
-#info {
-    background-color: #fff; /* White background for contrast */
-    padding: 20px; /* Space inside the section */
-    margin: 20px; /* Space outside the section */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: center; /* Center text alignment */
-}
-
-#info h1 {
-    font-size: 2.5em; /* Larger font size for the name */
-    color: #333; /* Darker text color for contrast */
-}
-
-#info p {
-    font-size: 1.2em; /* Slightly larger font size for readability */
-    color: #555; /* Medium gray color for less emphasis */
-}
-
-#info a {
-    color: #007BFF; /* Link color */
-    font-weight: bold; /* Bold links for emphasis */
-}
-
-#info a:hover {
-    text-decoration: underline; /* Underline on hover for interaction */
+.info {
+  background-color: #fff; /* White background for contrast */
+  padding: 20px; /* Space inside the section */
+  margin: 20px; /* Space outside the section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center text alignment */
 }
 
 /* Navigation Bar Styles */
+#navbar {
+  background-color: #fff; /* Set background color to white */
+  color: #000; /* Set text color to black */
+}
 
-#navbar nav ul {
+#navbar a {
+  color: #333; /* Set text color to black */
+  text-decoration: none;
+}
+
+#navbar ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -46,63 +63,32 @@ body {
   padding: 0;
 }
 
-#navbar nav ul li {
+#navbar ul li {
   margin-right: 20px;
 }
 
-#navbar nav a {
-  color: #333;
-  text-decoration: none;
-}
-
-#navbar nav a:hover {
+#navbar a:hover {
   color: #666;
-}
-
-/* Responsive design for small screens */
-@media (max-width: 600px) {
-  #navbar nav ul {
-    flex-direction: column;
-  }
-  #navbar nav ul li {
-    margin: 10px 0;
-  }
-}
-
-/* Main content */
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-	font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-	padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Section Styles */
 section {
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7); /* Set background color to semi-transparent white */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column; /* Add this to stack content vertically */
 }
 
 /* Image Styles */
-
 img {
   width: 200px;
   height: 150px;
 }
-
 
 @media only screen and (max-width: 768px) {
   img {
@@ -117,3 +103,15 @@ img {
     height: 75px;
   }
 }
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  #navbar ul {
+    flex-direction: column;
+  }
+  #navbar ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Add additional media queries as needed for responsiveness */
