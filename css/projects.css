@@ -1,11 +1,39 @@
 
+
+/* General Styles */
 body {
+  background-image: url(https://cdn.glitch.global/a5d4c914-cb94-4cd1-bf26-a1933bd1dbcf/2-sides-of-brain-2-e1648661027959.jpeg?v=1654037260230);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 10em;
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #333;
+  font-size: 36px;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-	background-image: url("gradient_bg.png");
-	background-repeat: repeat-x;
+}
+
+p {
+  color: #666;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+span {
+  color: #999;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 /* Info Section Styles */
 #info {
@@ -70,11 +98,12 @@ body {
 }
 /* Section Styles */
 section {
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7); /* Set background color to semi-transparent white */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	
 }
 
 h1 {
